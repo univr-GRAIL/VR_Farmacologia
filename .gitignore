@@ -70,3 +70,6 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Big .fbx files - lighter ones are used in the project, the heavier ones are there just for reference
+/[Aa]ssets/3D Models/1) Canopy/Scena1Old.fbx
