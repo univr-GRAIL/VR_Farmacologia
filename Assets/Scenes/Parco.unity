@@ -2282,6 +2282,66 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136028720}
   m_Mesh: {fileID: 4300000, guid: 89ef5bcb77f04f445860451d56a54ac4, type: 2}
+--- !u!1 &148054670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 148054672}
+  - component: {fileID: 148054671}
+  m_Layer: 0
+  m_Name: Teleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &148054671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148054670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3ae61a7b2763243b3518d956d4c5b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CameraAnchor: {fileID: 2085828012}
+  LineMat: {fileID: 2100000, guid: f2754a6227c3d3c4cb72b8dc4d259cb5, type: 2}
+  CapC: {fileID: 0}
+  keyToPress:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Key To Press
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: aa469e25-3614-488a-b3be-dbf1fd1f8092
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 8650556816782149517, guid: ea9500ae32862c949b420c59682d02ed,
+      type: 3}
+--- !u!4 &148054672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 148054670}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.8595, y: 3.439, z: 10.79}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163242085
 GameObject:
   m_ObjectHideFlags: 0
@@ -27678,6 +27738,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: 7668830299931688023, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
+      propertyPath: grabAxis.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668830299931688023, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
       propertyPath: releaseAction.m_Reference
       value: 
       objectReference: {fileID: -1398031799169746360, guid: ea9500ae32862c949b420c59682d02ed,
@@ -27696,6 +27761,26 @@ PrefabInstance:
         type: 3}
       propertyPath: grabAxis.m_Action.m_SingletonActionBindings.Array.data[0].m_Action
       value: Grab Axis
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668830300499184784, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668830300499184787, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668830300499184787, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7668830300499184787, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8208287724312505100, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
