@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: 2
+    second: {fileID: 2100000, guid: 011df114b2d257b4cadef8f049c12d5b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: 5
     second: {fileID: 2100000, guid: 70aa0f55afb697943aa8a275a1dde548, type: 2}
   - first:
@@ -19,6 +24,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Wall
     second: {fileID: 2100000, guid: 3b1f466e28fcee840862152318248fcf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 3d4b394229c0a5f4d98e945b6dfeb6c3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood-1
+    second: {fileID: 2100000, guid: e60fcc412adcfa84791b00142ba6ad26, type: 2}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
