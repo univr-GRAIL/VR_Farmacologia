@@ -28378,6 +28378,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 778010676556682180, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781606472114912362, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 781606472114912362, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a23dd9a890df9154c85afc20164c615e, type: 2}
     - target: {fileID: 1361731894682614131, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
       propertyPath: m_IsActive
@@ -28467,6 +28482,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0704
+      objectReference: {fileID: 0}
+    - target: {fileID: 4978444108169348580, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4978444108169348580, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
@@ -28603,12 +28623,12 @@ PrefabInstance:
     - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
       propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Interactions
-      value: 
+      value: Press(pressPoint=1)
       objectReference: {fileID: 0}
     - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
       propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Interactions
-      value: 
+      value: Press(pressPoint=1)
       objectReference: {fileID: 0}
     - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
