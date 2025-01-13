@@ -28378,6 +28378,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1361731894682614131, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1789286595010299963, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
       propertyPath: m_IsActive
@@ -28433,10 +28438,35 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3229984601889875230, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: teleportObject
+      value: 
+      objectReference: {fileID: 1040045341}
+    - target: {fileID: 3229984601889875230, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: distanceMultiplyer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3395973213855612963, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781950320362145048, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0592
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781950320362145048, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2945
+      objectReference: {fileID: 0}
+    - target: {fileID: 4781950320362145048, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0704
       objectReference: {fileID: 0}
     - target: {fileID: 4978444108169348580, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
@@ -28469,6 +28499,131 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_UseReference
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_ExpectedControlType
+      value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 1a5b5215-2b2b-40ac-aad9-5155203246ce
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: edd47473-9eef-4f3d-8589-b6ca3a98c597
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Id
+      value: db234ef2-d13b-416a-9d85-03242019c169
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Id
+      value: d74d7c9d-bc99-4123-80ea-384cdda59fcd
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Id
+      value: ce1b60e2-2227-412e-bfb9-b17621cc4e19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <ViveController>{RightHand}/trackpadTouched
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <ViveController>/trackpadTouched
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <ViveController>{RightHand}/trackpadClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <ViveController>/trackpadClicked
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Start Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Start Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Finish Teleport
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Interactions
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Interactions
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: startTeleportAction.m_Action.m_SingletonActionBindings.Array.data[2].m_Interactions
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[0].m_Interactions
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: finishTeleportAction.m_Action.m_SingletonActionBindings.Array.data[1].m_Interactions
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7505202213655192032, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
