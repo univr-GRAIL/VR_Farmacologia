@@ -726,6 +726,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: cancelTeleportAction.m_Action.m_Id
+      value: 52f0397e-2cb2-4671-b674-c278fa589aa1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6260503128497600680, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      propertyPath: cancelTeleportAction.m_Action.m_Name
+      value: Cancel Teleport
+      objectReference: {fileID: 0}
     - target: {fileID: 7505202213655192032, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
       propertyPath: OutputAudioMixerGroup
@@ -924,8 +934,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 196497920694862013, guid: f13bbbc9578242a44953eec81cfb27d4, type: 3}
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8831681785675433008, guid: f13bbbc9578242a44953eec81cfb27d4,
+        type: 3}
+      insertIndex: 5
+      addedObject: {fileID: 2100914583}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7668830300499184784, guid: f13bbbc9578242a44953eec81cfb27d4,
         type: 3}
@@ -956,6 +971,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1827e9caa3a42174ea1ead7cf86e7b2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &855336486 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8831681785675433008, guid: f13bbbc9578242a44953eec81cfb27d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 855336483}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &855336487 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 978722647479649261, guid: f13bbbc9578242a44953eec81cfb27d4,
+    type: 3}
+  m_PrefabInstance: {fileID: 855336483}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &878155176
 GameObject:
   m_ObjectHideFlags: 0
@@ -1989,6 +2016,236 @@ Transform:
   m_Father: {fileID: 99004136}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 59.496, z: 0}
+--- !u!1001 &2100914582
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 855336486}
+    m_Modifications:
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5625001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5624999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5625001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.2935
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0715
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9930676
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.1168289
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.012891892
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0012578834
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -13.419
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 1.491
+      objectReference: {fileID: 0}
+    - target: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 3824179886319958982, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4813400343104777607, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: teleportObject
+      value: 
+      objectReference: {fileID: 855336487}
+    - target: {fileID: 4813400343104777607, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: distanceMultiplyer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7828819849286420516, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      propertyPath: m_Name
+      value: TeleporterPointer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7828819849286420516, guid: 550b13c7ab5987948bb95292d813fbde,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2100914586}
+  m_SourcePrefab: {fileID: 100100000, guid: 550b13c7ab5987948bb95292d813fbde, type: 3}
+--- !u!4 &2100914583 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3189517785069784449, guid: 550b13c7ab5987948bb95292d813fbde,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100914582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2100914584 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7828819849286420516, guid: 550b13c7ab5987948bb95292d813fbde,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100914582}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2100914585 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4813400343104777607, guid: 550b13c7ab5987948bb95292d813fbde,
+    type: 3}
+  m_PrefabInstance: {fileID: 2100914582}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100914584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02e7dadae3689a64bb9a24e46177ce9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2100914586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100914584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e61a6c754b32184fa0fac4b86d9ff14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hand: {fileID: 2100914585}
+  startTeleportAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Start Teleport
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: ee10a817-a89e-4101-8291-9c26fd23c4c7
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 1a5b5215-2b2b-40ac-aad9-5155203246ce
+        m_Path: <ViveController>{RightHand}/trackpadTouched
+        m_Interactions: Press(pressPoint=1)
+        m_Processors: 
+        m_Groups: 
+        m_Action: Start Teleport
+        m_Flags: 0
+      - m_Name: 
+        m_Id: edd47473-9eef-4f3d-8589-b6ca3a98c597
+        m_Path: <ViveController>/trackpadTouched
+        m_Interactions: Press(pressPoint=1)
+        m_Processors: 
+        m_Groups: 
+        m_Action: Start Teleport
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: -2312345087674482032, guid: ea9500ae32862c949b420c59682d02ed,
+      type: 3}
+  finishTeleportAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Finish Teleport
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 2806a646-e838-4448-ab1d-b845afe47063
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: d74d7c9d-bc99-4123-80ea-384cdda59fcd
+        m_Path: <ViveController>{RightHand}/trackpadClicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Finish Teleport
+        m_Flags: 0
+      - m_Name: 
+        m_Id: ce1b60e2-2227-412e-bfb9-b17621cc4e19
+        m_Path: <ViveController>/trackpadClicked
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Finish Teleport
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 1925838171772615031, guid: ea9500ae32862c949b420c59682d02ed,
+      type: 3}
+  cancelTeleportAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Cancel Teleport
+      m_Type: 1
+      m_ExpectedControlType: Button
+      m_Id: 673558b5-813f-4ef9-97ea-bd5c7c7df053
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings:
+      - m_Name: 
+        m_Id: 53a9c21c-6433-48b8-9e54-945ac70dfe98
+        m_Path: <ViveController>{RightHand}/gripPressed
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Cancel Teleport
+        m_Flags: 0
+      - m_Name: 
+        m_Id: 91d95af8-f846-4ada-9eff-3dbec51501fa
+        m_Path: <ViveController>/gripPressed
+        m_Interactions: 
+        m_Processors: 
+        m_Groups: 
+        m_Action: Cancel Teleport
+        m_Flags: 0
+      m_Flags: 0
+    m_Reference: {fileID: 0}
 --- !u!1 &29831470348356181
 GameObject:
   m_ObjectHideFlags: 0
