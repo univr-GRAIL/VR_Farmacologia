@@ -31,9 +31,12 @@ namespace Autohand{
         [Header("Line Settings")]
         public Gradient canTeleportColor = new Gradient(){ colorKeys = new GradientColorKey[] { new GradientColorKey(){ color = Color.green, time = 0 } } };
         public Gradient cantTeleportColor = new Gradient(){ colorKeys = new GradientColorKey[] { new GradientColorKey(){ color = Color.red, time = 0 } } };
-
         [Tooltip("This gameobject will match the position of the teleport point when aiming")]
         public GameObject indicator;
+
+        [Header("Allowed GameObjs to teleport on")]
+        [Tooltip("Write the tag on which the user can teleport on (default: floor)")]
+        public string canTeleportTag = "floor";        
 
         [Header("Unity Events")]
         public UnityEvent OnStartTeleport;
@@ -78,20 +81,27 @@ namespace Autohand{
                 lineList.Add(lineArr[i]);
                 if(i != 0) {
                     if(Physics.Raycast(lineArr[i-1], lineArr[i]-lineArr[i-1], out aimHit, Vector3.Distance(lineArr[i], lineArr[i-1]), ~Hand.GetHandsLayerMask(), QueryTriggerInteraction.Ignore)) {
-                        //Makes sure the angle isnt too steep
-                        if(Vector3.Angle(aimHit.normal, Vector3.up) <= maxSurfaceAngle && layer == (layer | (1 << aimHit.collider.gameObject.layer))) {
-                            line.colorGradient = canTeleportColor;
-                            lineList.Add(aimHit.point);
-                            hitting = true;
-                            break;
+                        // Custom code for Farmacologia App
+                        // If the user is hitting a GameObject that is allowed, then continue
+                        Debug.Log(aimHit.collider.transform.gameObject.tag  == canTeleportTag);
+                        Debug.Log(aimHit.collider.transform.gameObject.tag);
+                        if (aimHit.collider.transform.gameObject.tag == canTeleportTag) // check hitted gObj tag
+                        {
+                            Debug.Log("hei!");
+                            //Makes sure the angle isnt too steep
+                            if(Vector3.Angle(aimHit.normal, Vector3.up) <= maxSurfaceAngle && layer == (layer | (1 << aimHit.collider.gameObject.layer))) {
+                                line.colorGradient = canTeleportColor;
+                                lineList.Add(aimHit.point);
+                                hitting = true;
+                                break;
+                            }
                         }
                         break;
                     }
                 }
             }
             line.positionCount = i;
-            line.SetPositions(lineArr);
-            
+            line.SetPositions(lineArr);            
         }
 
         void DrawIndicator(){
