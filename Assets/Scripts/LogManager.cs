@@ -14,8 +14,12 @@ public class LogManager : MonoBehaviour
 
     List<GameObject> handObjects;  //Struttura per tenere traccia degli oggetti che l'utente ha in mano
     GameObject currentGazedObject = null;  //Oggetto attuale guardato dall'utente
+    bool justTeleported = false;
     float currentTime = 0f;  //Timer per tenere conto del tempo passato da un salvataggio ad un altro
     string path;  //Path del file di log
+    // User position RELATIVE to initial position (X, Z)
+    float xPos = 0.0f;
+    float zPos = 0.0f;
 
     Vector3 startPos;  //Vettore per salvare la posizione iniziale del giocatore
 
@@ -75,9 +79,17 @@ public class LogManager : MonoBehaviour
         //Log per tempo di gioco
         File.AppendAllText(path, "[LOG " + System.DateTime.Now.ToString("HH:mm:ss.fff") + "]\n");  //Salviamo l'orario di salvtaggio del log
 
+        // Log teleport
+        if (justTeleported == true)
+        {
+            justTeleported = false; // re-set the var
+            // print it
+            File.AppendAllText(path, "- Utente si è teletrasportato \n \t Posizione precedente (X, Z): (" + xPos + ", " + zPos + ")\n");  //Write that user just teleported + prev pos
+        }
+
         //Log per movimento (la posizione y non serve in quanto non si muove verso l'altro o il basso l'utente
-        float xPos = playerPosition.position.x - startPos.x;  //Calcoliamo la posizione x rispetto a quella iniziale
-        float zPos = playerPosition.position.z - startPos.z;  //Calcoliamo la posizione z rispetto a quella iniziale
+        xPos = playerPosition.position.x - startPos.x;  //Calcoliamo la posizione x rispetto a quella iniziale
+        zPos = playerPosition.position.z - startPos.z;  //Calcoliamo la posizione z rispetto a quella iniziale
         File.AppendAllText(path, "- Posizione Utente (X, Z): (" + xPos + ", " + zPos + ")\n");  //Salviamo la posizione in coordinate cartesiane
 
         //Log per dove la testa è rivolta
@@ -145,5 +157,13 @@ public class LogManager : MonoBehaviour
     public void GazeOff(GameObject gameObject)
     {
         currentGazedObject = null;
+    }
+
+    // Function called when the user teleports
+    // Logs the teleport action
+    public void OnTeleport()
+    {
+        justTeleported = true;
+        AddLog();  //Chiamiamo la funzione per aggiornare il log
     }
 }

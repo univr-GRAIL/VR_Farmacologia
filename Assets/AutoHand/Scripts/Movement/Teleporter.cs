@@ -83,8 +83,6 @@ namespace Autohand{
                     if(Physics.Raycast(lineArr[i-1], lineArr[i]-lineArr[i-1], out aimHit, Vector3.Distance(lineArr[i], lineArr[i-1]), ~Hand.GetHandsLayerMask(), QueryTriggerInteraction.Ignore)) {
                         // Custom code for Farmacologia App
                         // If the user is hitting a GameObject that is allowed, then continue
-                        Debug.Log(aimHit.collider.transform.gameObject.tag  == canTeleportTag);
-                        Debug.Log(aimHit.collider.transform.gameObject.tag);
                         if (aimHit.collider.transform.gameObject.tag == canTeleportTag) // check hitted gObj tag
                         {
                             Debug.Log("hei!");
