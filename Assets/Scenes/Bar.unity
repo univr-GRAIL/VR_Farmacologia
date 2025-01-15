@@ -1069,7 +1069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251560645}
   m_Layer: 0
-  m_Name: Floor tag - Can teleport on
+  m_Name: FLOOR TAG - Can teleport on
   m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
