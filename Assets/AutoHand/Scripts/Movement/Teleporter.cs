@@ -85,7 +85,6 @@ namespace Autohand{
                         // If the user is hitting a GameObject that is allowed, then continue
                         if (aimHit.collider.transform.gameObject.tag == canTeleportTag) // check hitted gObj tag
                         {
-                            Debug.Log("hei!");
                             //Makes sure the angle isnt too steep
                             if(Vector3.Angle(aimHit.normal, Vector3.up) <= maxSurfaceAngle && layer == (layer | (1 << aimHit.collider.gameObject.layer))) {
                                 line.colorGradient = canTeleportColor;
