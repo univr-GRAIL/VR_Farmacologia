@@ -84,7 +84,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaCutoff: 0.5
-    - _BackWallTexTiling: 1.2
+    - _BackWallTexTiling: 1.25
     - _BackWallTexTilling: 0.15
     - _BackWallTile: 2
     - _CeilingTexTiling: 1
@@ -129,6 +129,6 @@ Material:
     - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
     - _PositionOffsetXYZroomsWprops: {r: 0.9, g: 0, b: -0.06, a: -3.27}
     - _RoomColorTint: {r: 1, g: 1, b: 1, a: 0}
-    - _RoomsXYZPropsW: {r: 0.5, g: 1, b: 0.5, a: 1}
+    - _RoomsXYZPropsW: {r: 0.5, g: 1.1, b: 0.5, a: 1}
     - _Vector0: {r: 0.93, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []

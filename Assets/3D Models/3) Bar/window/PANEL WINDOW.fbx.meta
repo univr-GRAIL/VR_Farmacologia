@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 920461cbaec7cc044ac5985ff4f4962d
+guid: e46a85510822cfa4f9000579392f0932
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,18 +7,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Cable
-    second: {fileID: 2100000, guid: 4ad08807bf6ae6341b79e9e20a3d5636, type: 2}
+      name: Glass
+    second: {fileID: 2100000, guid: c9f1f2487f207ad409855fe34c096ff5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Emissive
-    second: {fileID: 2100000, guid: 659e128f4bfb33a439a65129d2a998f7, type: 2}
+      name: Material.001
+    second: {fileID: 2100000, guid: 3af84cc5d2546e44ca03c12c91829272, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Metal
-    second: {fileID: 2100000, guid: 8c7ac01dc1f18cb4b8db03905f289855, type: 2}
+      name: Wood 5
+    second: {fileID: 2100000, guid: 894fbba12eecaf5439528c62a9175969, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
