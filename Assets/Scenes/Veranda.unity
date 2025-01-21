@@ -98,7 +98,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: dee2ed6682c5ce440909588542f4582a,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 2c1a257a68fc9584099871c04a8da921,
     type: 2}
 --- !u!196 &4
@@ -1247,6 +1248,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass new (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1267,6 +1273,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: a9b0d57019d1e8746827f1593b5faf4e, type: 2}
+    - target: {fileID: 5513840191823156069, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1282,6 +1293,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 2b462c5be6a765c4e8b00544c9f07a8f, type: 2}
+    - target: {fileID: 8376888327017635834, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2462c83434b69914ba01966f2ba99902, type: 3}
@@ -1459,6 +1475,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plants for free vol 1_obj (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
@@ -1793,6 +1819,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: plants for free vol 1_obj (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1823,7 +1859,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1228357216
 Transform:
@@ -1939,7 +1975,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1379483903
 Transform:
@@ -2046,6 +2082,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plants for free vol 1_obj
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
@@ -2275,7 +2321,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1622484171
 Transform:
@@ -2308,7 +2354,7 @@ GameObject:
   m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1739271050
 Transform:
@@ -2510,7 +2556,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1855556655
 Transform:
@@ -2682,6 +2728,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: grass new
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2702,6 +2753,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: a9b0d57019d1e8746827f1593b5faf4e, type: 2}
+    - target: {fileID: 5513840191823156069, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2717,6 +2773,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 2b462c5be6a765c4e8b00544c9f07a8f, type: 2}
+    - target: {fileID: 8376888327017635834, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2462c83434b69914ba01966f2ba99902, type: 3}
@@ -2743,7 +2804,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1936506123
 Transform:
