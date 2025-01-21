@@ -65,7 +65,7 @@ public class LogManager : MonoBehaviour
         }
     }
 
-    //Funzione per disegnare la sfera nella scena e capire quanto grande effettivamente �
+    //Funzione per disegnare la sfera nella scena e capire quanto grande effettivamente è
     void OnDrawGizmos()  //Usata solo per debug, si pu� benissimo commentare
     {
         Gizmos.color = Color.red;  //Per settare il colore dei disegni di debug
@@ -73,59 +73,129 @@ public class LogManager : MonoBehaviour
         Gizmos.DrawLine(playerRotation.position, playerRotation.TransformDirection(Vector3.forward));  //Per capire la direzione di dove si guarda
     }
 
-    //Funzione per aggiungere informazioni al file di log
+    /*
+     To make parsing the log easier, add an identifier to each line
+
+    - Time: 
+        begins with "[TIME "
+        ends with "]"
+        example: [TIME 17:27:53.793]
+
+    - Teleport:
+        if the user teleported:
+            begins with "TELEPORT: YES"
+            next line contains "LAST POS - (xPos, zPos)" 
+                example: LAST POS - (0,0956018, 0,621542)
+        if user did not teleport:
+            begins with "TELEPORT: NO"
+            no next lines for teleport
+
+    - User position
+        line contains "USER POS - (xPos, zPos)" 
+            example: USER POS - (0,0956018, 0,621542)
+        
+    - Head orientation
+        line contains "HEAD ORIENT - deg°"
+            example: "HEAD ORIENT - 34,65643°"
+
+    - Head pointing towards a special item:
+        if the head is pointing at an item:
+            begins with "HEAD POINTING: YES" 
+            then line contains "HEAD POINTING AT - item"
+                example: "HEAD POINTING AT - Pacchetto di Sigarette"
+        if it's not pointing at anything:
+            begins with "HEAD POINTING: NO"
+
+    - User is gazing a special item:
+        if user is looking at an item:
+            begins with "GAZING: YES" 
+            then line contains "GAZING AT - item"
+                example: "GAZING AT - Pacchetto di Sigarette"
+        if user is not looking at an item:
+            begins with "GAZING: NO"
+
+    - User is holding a special item in their hand:
+        if user is holding an item:
+            begins with "ITEMS: YES" 
+            then line contains "ITEMS HAND - list of items"
+                example: "ITEMS HAND - Pacchetto di Sigarette"
+        if user is not holding an item:
+            begins with "ITEMS: NO"
+     */
+
+    // Print log info in a file
     void AddLog()
     {
-        //Log per tempo di gioco
-        File.AppendAllText(path, "[LOG " + System.DateTime.Now.ToString("HH:mm:ss.fff") + "]\n");  //Salviamo l'orario di salvtaggio del log
+        //Time log
+        File.AppendAllText(path, "[TIME " + System.DateTime.Now.ToString("HH:mm:ss.fff") + "]\n");
 
         // Log teleport
-        if (justTeleported == true)
+        if (justTeleported == false)
+        {
+            File.AppendAllText(path, "TELEPORT: NO - User did NOT teleport\n"); 
+        }
+        else if (justTeleported == true)
         {
             justTeleported = false; // re-set the var
             // print it
-            File.AppendAllText(path, "- Utente si è teletrasportato \n \t Posizione precedente (X, Z): (" + xPos + ", " + zPos + ")\n");  //Write that user just teleported + prev pos
+            File.AppendAllText(path, "TELEPORT: YES - User teleported \n \t Previous position (X, Z): LAST POS - (" + xPos + ", " + zPos + ")\n");  //Write that user just teleported + prev pos
         }
 
-        //Log per movimento (la posizione y non serve in quanto non si muove verso l'altro o il basso l'utente
-        xPos = playerPosition.position.x - startPos.x;  //Calcoliamo la posizione x rispetto a quella iniziale
-        zPos = playerPosition.position.z - startPos.z;  //Calcoliamo la posizione z rispetto a quella iniziale
-        File.AppendAllText(path, "- Posizione Utente (X, Z): (" + xPos + ", " + zPos + ")\n");  //Salviamo la posizione in coordinate cartesiane
+        // Moving log (y is not logged because user doesn't move up and down)
+        xPos = playerPosition.position.x - startPos.x;  //x position relative to the starting point
+        zPos = playerPosition.position.z - startPos.z;  //z position relative to the starting point
+        // Save user position in cartesian coordinates
+        File.AppendAllText(path, "User position (X, Z): USER POS - (" + xPos + ", " + zPos + ")\n"); 
 
-        //Log per dove la testa è rivolta
-        Vector3 getPlayerRotation = playerRotation.rotation.eulerAngles;  //Prendiamo gli angoli di eulero della rotazione del giocatore
-        float regularAngle = getPlayerRotation.y % 360f;  //Ci assicuriamo che siano compresi tra 0 e 360 (quindi non negativi o maggiori di 360)
-        File.AppendAllText(path, "- Direzione Testa in Gradi: " + regularAngle + "°\n");  //Salviamo la rotazione, quindi la direzione di dove è rivolta la testa l'utente
+        // Head orientation log
+        // Take euler angles from player rotation
+        Vector3 getPlayerRotation = playerRotation.rotation.eulerAngles; 
+        // Make sure they are from 0 to 360 (not negatives or greater than 360)
+        float regularAngle = getPlayerRotation.y % 360f;  
+        // Save rotation, so the user head direction
+        File.AppendAllText(path, "Head orientation (degrees): HEAD ORIENT - " + regularAngle + "°\n");
 
-        //Log per sapere verso che oggetto è rivolta la testa
-        RaycastHit hit;  //Variabile per salvare le informazioni verso che oggetto è rivolta la testa
-        if (Physics.SphereCast(playerRotation.position, radiusVisible, playerRotation.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))  //Controlliamo che la testa sia effettivamente rivolta verso qualcosa
-            File.AppendAllText(path, "- Verso che oggetto è rivolta la testa: " + hit.transform.gameObject.name + "\n");  //Salviamo l'oggetto
-        else  //Altrimenti salviamo che la testa non è rivolta verso nessun oggetto in particolare
-            File.AppendAllText(path, "- Testa non rivolta verso nessun oggetto particolare\n");
+        // todo: change con cono e mesh. se oggetto sta dentro, stampa
 
-        // Log oggetti guardati con sguardo
-        if (currentGazedObject != null)
-            File.AppendAllText(path, "- Oggetto guardato: " + currentGazedObject.name + "\n");  //Salviamo l'oggetto guardato
+        // Log what item the head is pointing toward
+        // Note: only log interesting items, such the interactables 
+        // Variable to save info about what item the head is pointing toward
+        RaycastHit hit;
+
+        // Check if the head is pointing towards something
+        if (Physics.SphereCast(playerRotation.position, radiusVisible, playerRotation.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
+            // Log item
+            File.AppendAllText(path, "HEAD POINTING: YES - Head is pointing towards item: HEAD POINTING AT - " + hit.transform.gameObject.name + "\n");  
         else
-            File.AppendAllText(path, "- Nessun oggetto particolare guardato\n"); 
+            File.AppendAllText(path, "HEAD POINTING: NO - Head is NOT pointing towards a special item\n");
 
-        //Log per oggetti in mano
-        if (handObjects.Count != 0)  //Se la struttura ha almeno un oggetto allora salviamo gli oggetti che ha in mano
+        // Log gazed item
+        if (currentGazedObject != null)
+            File.AppendAllText(path, "GAZING: YES - Gazed item: GAZING AT - " + currentGazedObject.name + "\n");  
+        else
+            File.AppendAllText(path, "GAZING: NO - Not gazing any special item \n"); 
+
+        //Log items in hand
+        // if the structure contains at least an item, save them as items in hand
+        if (handObjects.Count != 0) 
         {
-            string objects = "";  //Prepariamo la stringa per salvare gli oggetti
-            for (int i = 0; i < handObjects.Count; i++)  //Cicliamo attraverso tutti gli oggetti salvati
+            string objects = ""; 
+            // loop on saved objects
+            for (int i = 0; i < handObjects.Count; i++)
             {
-                if (i == handObjects.Count - 1)  //Se l'oggetto è l'ultimo allora non aggiungiamo una virgola
+                // do not add a comma if the item is the last one
+                if (i == handObjects.Count - 1)
                     objects += handObjects[i].name;
-                else  //Altrimenti aggiungiamo una virgola per separare gli oggetti
+                // add a comma to separate items
+                else
                     objects += handObjects[i].name + ", ";
             }
-            File.AppendAllText(path, "- Oggetti in Mano: " + objects + "\n\n-------------------------------------------------------------------\n\n");
+            File.AppendAllText(path, "ITEMS: YES - Items in hand: ITEMS HAND - " + objects + "\n\n-------------------------------------------------------------------\n\n");
         }
-        else  //Altrimenti salviamo il fatto che non ha nessun oggetto in mano
+        // else, log that there are no items in hand
+        else  
         {
-            File.AppendAllText(path, "- Nessun Oggetto in Mano\n\n-------------------------------------------------------------------\n\n");
+            File.AppendAllText(path, "ITEMS: NO - No items in hand\n\n-------------------------------------------------------------------\n\n");
         }
     }
 
@@ -135,7 +205,7 @@ public class LogManager : MonoBehaviour
     public void GrabOn(GameObject gameObject)  //Funzione da chiamare quando viene preso in mano un oggetto
     {
         handObjects.Add(gameObject);  //Aggiungiamo l'oggetto preso alla struttura utilizzata per memorizzare gli oggetti
-        AddLog();  //Chiamiamo la funzione per aggiornare il log
+        AddLog(); // update log
     }
 
     //Funzione che imposta un flag per dire alla funzione AddLog che l'utente ha lasciato dalla mano un oggetto
@@ -144,7 +214,7 @@ public class LogManager : MonoBehaviour
     public void GrabOff(GameObject gameObject)  //Funzione da chiamare quando viene lasciato dalla mano un oggetto
     {
         handObjects.Remove(gameObject);  //Aggiungiamo l'oggetto preso alla struttura utilizzata per memorizzare gli oggetti
-        AddLog();  //Chiamiamo la funzione per aggiornare il log
+        AddLog(); // update log
     }
 
     public void GazeOn(GameObject gameObject)
@@ -164,6 +234,6 @@ public class LogManager : MonoBehaviour
     public void OnTeleport()
     {
         justTeleported = true;
-        AddLog();  //Chiamiamo la funzione per aggiornare il log
+        AddLog();  // update log
     }
 }
