@@ -106,7 +106,6 @@ public class AutoHandPlayerControllerInputSimulator : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("henlo");
         var activeXRSystemName = XRGeneralSettings.Instance?.Manager?.activeLoader.name;
 
         // Check for MockHMD OR Open XR, if it is not running, then don't do anything

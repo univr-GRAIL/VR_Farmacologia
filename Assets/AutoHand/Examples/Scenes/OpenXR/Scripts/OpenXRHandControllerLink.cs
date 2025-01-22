@@ -6,6 +6,10 @@ using UnityEngine.XR.OpenXR.Input;
 namespace Autohand.Demo {
     [HelpURL("https://app.gitbook.com/s/5zKO0EvOjzUDeT2aiFk3/auto-hand/controller-input")]
     public class OpenXRHandControllerLink : HandControllerLink {
+        // Custom code for Farmacologia App
+        [Tooltip("Assign a SpriteRenderer to be renderer whenever the 'grab' action button is pressed")]
+        public SpriteRenderer grabCircle;
+
         public InputActionProperty grabAxis;
         public InputActionProperty squeezeAxis;
         public InputActionProperty grabAction;
@@ -14,7 +18,6 @@ namespace Autohand.Demo {
         public InputActionProperty stopSqueezeAction;
         public InputActionProperty hapticAction;
 
-
         private bool squeezing;
         private bool grabbing;
         private void Start() {
@@ -22,6 +25,8 @@ namespace Autohand.Demo {
                 handLeft = this;
             else
                 handRight = this;
+            // Custom code for Farmacologia App
+            grabCircle.enabled = false;
         }
 
 
@@ -59,6 +64,9 @@ namespace Autohand.Demo {
         }
 
         private void Grab(InputAction.CallbackContext grab){
+            // Custom code for Farmacologia App
+            grabCircle.enabled = true;
+
             if (!grabbing){
                 hand.Grab();
                 grabbing = true;
@@ -66,6 +74,9 @@ namespace Autohand.Demo {
         }
         
         private void Release(InputAction.CallbackContext grab){
+            // Custom code for Farmacologia App
+            grabCircle.enabled = false;
+
             if (grabbing){
                 hand.Release();
                 grabbing = false;

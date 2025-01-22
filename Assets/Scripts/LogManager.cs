@@ -236,4 +236,9 @@ public class LogManager : MonoBehaviour
         justTeleported = true;
         AddLog();  // update log
     }
+
+    public void test()
+    {
+        Debug.Log("grab initial!");
+;    }
 }
