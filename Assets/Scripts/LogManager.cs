@@ -6,28 +6,52 @@ using UnityEngine.SceneManagement;
 public class LogManager : MonoBehaviour
 {
     [Header("Save Log Options")]
-    [SerializeField] float saveTime = 0.2f;  //Rappresenta ogni quanto viene aggiornato il file di log
-    [SerializeField] Transform playerPosition;  //Rappresenta la posizione dell'utente (Assegnare la componente che effettivamente si muove)
-    [SerializeField] Transform playerRotation;  //Rappresenta la direzione dello sguardo dell'utente (Assegnare la camera principale)
-    [SerializeField] LayerMask layerMask;  //Layer degli oggetti che si vuole sapere vengano guardati [NotifyVisible -> Assegnare questi oggetti a questo layer]
-    [SerializeField] float radiusVisible = 0.05f;  //Raggio della sfera per vedere gli oggetti "particolari" guardati dall'utente
+    [Tooltip("How often the log file is updated and saves the info")]
+    [SerializeField] 
+    float saveTime = 0.2f;
 
-    List<GameObject> handObjects;  //Struttura per tenere traccia degli oggetti che l'utente ha in mano
-    GameObject currentGazedObject = null;  //Oggetto attuale guardato dall'utente
+    [Tooltip("The player position (assign the GameObject that moves, like AutoHandPlayer)")]
+    [SerializeField] 
+    Transform playerPosition;
+
+    [Tooltip("Rotation of the player's head (assign the main camera)")]
+    [SerializeField] 
+    Transform playerRotation;
+
+    [Tooltip("Layer of the special items. Used to log if the user is looking at them or if the head is directed towards them. Deafult: NotifyVisible. PLEASE: Assign these special items to this layer!")]
+    [SerializeField] 
+    LayerMask layerMask;
+
+    [Tooltip("Radius of the sphere used to determine if the head is pointing towards a special item (using a sphereCast)")]
+    [SerializeField] 
+    float radiusVisible = 0.1f;
+
+    // What items the user is holding in their hand
+    List<GameObject> handObjects;
+
+    // Current gazed item
+    GameObject currentGazedObject = null;
+
+    // Tracks if the user just teleported (flag)
     bool justTeleported = false;
-    float currentTime = 0f;  //Timer per tenere conto del tempo passato da un salvataggio ad un altro
-    string path;  //Path del file di log
-    // User position RELATIVE to initial position (X, Z)
+
+    // Timer to measure time between file saving
+    float currentTime = 0f;
+
+    // Where to save the log file
+    string path; 
+
+    // User position RELATIVE to initial position 'startPos' (X, Z)
     float xPos = 0.0f;
     float zPos = 0.0f;
 
-    Vector3 startPos;  //Vettore per salvare la posizione iniziale del giocatore
+    // Starting position of player
+    Vector3 startPos;  
 
     public static LogManager Instance { get; private set; }
     private void Awake()
     {
         // If there is an instance, and it's not me, delete myself.
-
         if (Instance != null && Instance != this)
         {
             Destroy(this);
@@ -38,39 +62,46 @@ public class LogManager : MonoBehaviour
         }
     }
 
-    //All'inizio dell'esecuzione verr� creato il file di log corrispondente a questa esecuzione
+    // at each execution, create a new log file
     void Start()
     {
-        //Inizializziamo la lista degli oggetti in mano e la posizione iniziale del giocatore
+        // initialize hand items' list 
         handObjects = new List<GameObject>();
+        // set initial player position
         startPos = playerPosition.position;
 
-        //Path dove verr� salvato il file (per ora sul Desktop)
+        // save path for log file (right now, on desktop)
         path = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + "\\" + System.DateTime.Now.ToString("yyyy-MM-dd HH-mm-ss") + ".txt"; ;
 
-        //Controlliamo se il file esiste gi� (non dovrebbe gi� esistere perch� � impossibile eseguire due volte nello stesso tempo)
-        //e lo creiamo scrivendo il nome della scena attuale all'inizio
+        // check if the file doesn't already exist. il false, create it
         if (!File.Exists(path))
             File.WriteAllText(path, "LOG " + SceneManager.GetActiveScene().name + "\n\n-------------------------------------------------------------------\n\n");
     }
 
-    //Ogni saveTime secondi verr� aggiunte informazioni al file di log
+    // save info in log file every 'saveTime'
     void Update()
     {
-        currentTime += Time.deltaTime;  //Aggiorniamo il timer
-        if (currentTime >= saveTime)  //Se il timer � maggiore del tempo di salvataggio allora effettuiamo il salvataggio e azzeriamo il timer
+        // update timer
+        currentTime += Time.deltaTime;
+
+        // if the timer is greater than the save time, then save and reset the timer
+        if (currentTime >= saveTime) 
         {
-            AddLog();  //Chiamiamo la funzione per aggiornare il log
-            currentTime = 0f;  //Reimpostiamo il timer a 0
+            AddLog(); 
+            currentTime = 0f;
         }
     }
 
-    //Funzione per disegnare la sfera nella scena e capire quanto grande effettivamente è
-    void OnDrawGizmos()  //Usata solo per debug, si pu� benissimo commentare
+    // function to draw the gizmos in the scene (head direction ray and head spherecast) 
+    void OnDrawGizmos() 
     {
-        Gizmos.color = Color.red;  //Per settare il colore dei disegni di debug
-        Gizmos.DrawSphere(playerRotation.position, radiusVisible);  //Per capire la grandezza del campo visivo
-        Gizmos.DrawLine(playerRotation.position, playerRotation.TransformDirection(Vector3.forward));  //Per capire la direzione di dove si guarda
+        // set color of debug objects
+        Gizmos.color = Color.red; 
+        // draw sphere on user's head to view the 'field of view' (kinda) used to cast a sphere cast
+        // (to detect if the user's head is toward a special item) 
+        Gizmos.DrawSphere(playerRotation.position, radiusVisible);
+        // draw head direction ray
+        Gizmos.DrawLine(playerRotation.position, playerRotation.TransformDirection(Vector3.forward));
     }
 
     /*
@@ -155,8 +186,6 @@ public class LogManager : MonoBehaviour
         // Save rotation, so the user head direction
         File.AppendAllText(path, "Head orientation (degrees): HEAD ORIENT - " + regularAngle + "°\n");
 
-        // todo: change con cono e mesh. se oggetto sta dentro, stampa
-
         // Log what item the head is pointing toward
         // Note: only log interesting items, such the interactables 
         // Variable to save info about what item the head is pointing toward
@@ -199,32 +228,36 @@ public class LogManager : MonoBehaviour
         }
     }
 
-    //Funzione che imposta un flag per dire alla funzione AddLog che l'utente ha preso in mano un oggetto
-    //e poi chiama tale funzione per salvare l'oggetto per evitare che venga perso il salvataggio dell'oggetto
-    //gameObject � il riferimento all'oggetto che viene preso
-    public void GrabOn(GameObject gameObject)  //Funzione da chiamare quando viene preso in mano un oggetto
+    // Function called whenever a special item is grabbed in hand
+    // grabbedItem: the grabbed item
+    public void GrabOn(GameObject grabbedItem) 
     {
-        handObjects.Add(gameObject);  //Aggiungiamo l'oggetto preso alla struttura utilizzata per memorizzare gli oggetti
+        // add the object to the grabbed item list
+        handObjects.Add(grabbedItem); 
         AddLog(); // update log
     }
 
-    //Funzione che imposta un flag per dire alla funzione AddLog che l'utente ha lasciato dalla mano un oggetto
-    //e poi chiama tale funzione per salvare l'oggetto per evitare che venga perso il salvataggio dell'oggetto
-    //gameObject � il riferimento all'oggetto che viene lasciato
-    public void GrabOff(GameObject gameObject)  //Funzione da chiamare quando viene lasciato dalla mano un oggetto
+    // Function called whenever a special item is released from an hand
+    // releasedItem: the released item
+    public void GrabOff(GameObject releasedItem)
     {
-        handObjects.Remove(gameObject);  //Aggiungiamo l'oggetto preso alla struttura utilizzata per memorizzare gli oggetti
+        // remove the object from the grabbed item list
+        handObjects.Remove(releasedItem); 
         AddLog(); // update log
     }
 
-    public void GazeOn(GameObject gameObject)
+    // Function called whenever a special item is gazed
+    // gazedItem: gazed item
+    public void GazeOn(GameObject gazedItem)
     {
-        if(currentGazedObject != gameObject)
-            currentGazedObject = gameObject;
+        if(currentGazedObject != gazedItem) // change the current gazed item if the previous is different than the current one
+            currentGazedObject = gazedItem;
         //AddLog();
     }
 
-    public void GazeOff(GameObject gameObject)
+    // Function called whenever a special item is not gazed anymore
+    // ungazedItem: un-gazed item
+    public void GazeOff(GameObject ungazedItem)
     {
         currentGazedObject = null;
     }
