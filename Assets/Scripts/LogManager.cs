@@ -18,6 +18,10 @@ public class LogManager : MonoBehaviour
     [SerializeField] 
     Transform playerRotation;
 
+    [Tooltip("Right controller (assign RobotHand (R))")]
+    [SerializeField]
+    Transform rightController;
+
     [Tooltip("Layer of the special items. Used to log if the user is looking at them or if the head is directed towards them. Deafult: NotifyVisible. PLEASE: Assign these special items to this layer!")]
     [SerializeField] 
     LayerMask layerMask;
@@ -41,9 +45,25 @@ public class LogManager : MonoBehaviour
     // Where to save the log file
     string path; 
 
-    // User position RELATIVE to initial position 'startPos' (X, Z)
-    float xPos = 0.0f;
-    float zPos = 0.0f;
+    // User position RELATIVE to initial position 'startPos' (X, Y, Z)
+    float xPosRel = 0.0f;
+    float yPosRel = 0.0f;
+    float zPosRel = 0.0f;
+
+    // User position ABSOLUTE (X, Y, Z)
+    float xPosAbs = 0.0f;
+    float yPosAbs = 0.0f;
+    float zPosAbs = 0.0f;
+
+    // Right controller position (X, Y, Z)
+    float xRContrPos = 0.0f;
+    float yRContrPos = 0.0f;
+    float zRContrPos = 0.0f;
+
+    // Right controller rotation (X, Y, Z)
+    float xRContrRot = 0.0f;
+    float yRContrRot = 0.0f;
+    float zRContrRot = 0.0f;
 
     // Starting position of player
     Vector3 startPos;  
@@ -75,7 +95,10 @@ public class LogManager : MonoBehaviour
 
         // check if the file doesn't already exist. il false, create it
         if (!File.Exists(path))
-            File.WriteAllText(path, "LOG " + SceneManager.GetActiveScene().name + "\n\n-------------------------------------------------------------------\n\n");
+            File.WriteAllText(path, "LOG " + SceneManager.GetActiveScene().name + "\n");
+
+        // Save user starting position
+        File.AppendAllText(path, "User starting position: USER START POS - " + startPos + "\n\n-------------------------------------------------------------------\n\n");
     }
 
     // save info in log file every 'saveTime'
@@ -115,19 +138,41 @@ public class LogManager : MonoBehaviour
     - Teleport:
         if the user teleported:
             begins with "TELEPORT: YES"
-            next line contains "LAST POS - (xPos, zPos)" 
-                example: LAST POS - (0,0956018, 0,621542)
+            next line contains "LAST POS RELATIVE - (xPosRel, yPosRel, zPosRel)" 
+                example: LAST POS RELATIVE - (0,0956018, 0,235001, 0,621542)
+            next line contains "LAST POS ABSOLUTE - (xPosAbs, yPosAbs, zPosAbs)" 
+                example: LAST POS ABSOLUTE - (3,0956018, 3,621542, 3,201333)
         if user did not teleport:
             begins with "TELEPORT: NO"
             no next lines for teleport
 
-    - User position
-        line contains "USER POS - (xPos, zPos)" 
-            example: USER POS - (0,0956018, 0,621542)
+    - User position relative to the inital one
+        line contains "USER POS RELATIVE - (xPosRel, yPosRel, zPosRel)"  (note: yPosRel is the 'up and down')
+            example: USER POS RELATIVE - (0,0956018, 0,2023, 0,621542)
+
+    - User position absolute
+        line contains "USER POS ABSOLUTE - (xPosAbs, yPosAbs, zPosAbs)"  (note: yPosAbs is the 'up and down')
+            example: USER POS ABSOLUTE - (4,0956018, 7,2023, 3,621542)
         
-    - Head orientation
-        line contains "HEAD ORIENT - deg°"
-            example: "HEAD ORIENT - 34,65643°"
+    - Head orientation in degrees
+        line contains "HEAD ORIENT DEG - deg°"
+            example: "HEAD ORIENT DEG - 34,65643°"
+
+    - Quaternion of head
+        line contains "HEAD QUATERNION - (x, y, z, w)"
+            example: "HEAD QUATERNION - (1.00000, 2.00000, 3.00000, 4.00000)"
+
+    - Right Controller position
+        line contains "R CONTROLLER POS - (xRContrPos, yRContrPos, zRContrPos)"
+            example: R CONTROLLER POS - (4,0956018, 7,2023, 3,621542)
+
+    - Right controller rotation
+        line contains "R CONTROLLER ROT - (xRContrRot, yRContrRot, zRContrRot)"
+            example: R CONTROLLER ROT - (4,0956018, 7,2023, 3,621542)
+
+    - Quaternion of right controller
+        line contains "R CONTROLLER QUATERNION - (x, y, z, w)"
+            example: "R CONTROLLER QUATERNION - (1.00000, 2.00000, 3.00000, 4.00000)"
 
     - Head pointing towards a special item:
         if the head is pointing at an item:
@@ -169,14 +214,25 @@ public class LogManager : MonoBehaviour
         {
             justTeleported = false; // re-set the var
             // print it
-            File.AppendAllText(path, "TELEPORT: YES - User teleported \n \t Previous position (X, Z): LAST POS - (" + xPos + ", " + zPos + ")\n");  //Write that user just teleported + prev pos
+            File.AppendAllText(path, "TELEPORT: YES - User teleported \n " + //Write that user just teleported
+                "\t Previous position (X, Y, Z): LAST POS RELATIVE - (" + xPosRel + ", " + yPosRel + ", " + zPosRel + ")\n" + // prev relative pos
+                "\t Previous position (X, Y, Z): LAST POS ABSOLUTE - (" + xPosAbs + ", " + yPosAbs + ", " + zPosAbs + ")\n"); // prev absolute pos
         }
 
-        // Moving log (y is not logged because user doesn't move up and down)
-        xPos = playerPosition.position.x - startPos.x;  //x position relative to the starting point
-        zPos = playerPosition.position.z - startPos.z;  //z position relative to the starting point
+        // User position log (relative)
+        // positions relative to the starting point
+        xPosRel = playerPosition.position.x - startPos.x;         
+        yPosRel = playerPosition.position.y - startPos.y;  // careful! Y is the 'up and down' 
+        zPosRel = playerPosition.position.z - startPos.z;
         // Save user position in cartesian coordinates
-        File.AppendAllText(path, "User position (X, Z): USER POS - (" + xPos + ", " + zPos + ")\n"); 
+        File.AppendAllText(path, "User position relative to initial (X, Y, Z): USER POS RELATIVE - (" + xPosRel + ", " + yPosRel + "," + zPosRel + ")\n");
+
+        // User position log (absolute)
+        xPosAbs = playerPosition.position.x;
+        yPosAbs = playerPosition.position.y;  // careful! Y is the 'up and down' 
+        zPosAbs = playerPosition.position.z;
+        // Save user position in cartesian coordinates
+        File.AppendAllText(path, "User position absolute (X, Y, Z): USER POS ABSOLUTE - (" + xPosAbs + ", " + yPosAbs + ", " + zPosAbs + ")\n");
 
         // Head orientation log
         // Take euler angles from player rotation
@@ -184,7 +240,28 @@ public class LogManager : MonoBehaviour
         // Make sure they are from 0 to 360 (not negatives or greater than 360)
         float regularAngle = getPlayerRotation.y % 360f;  
         // Save rotation, so the user head direction
-        File.AppendAllText(path, "Head orientation (degrees): HEAD ORIENT - " + regularAngle + "°\n");
+        File.AppendAllText(path, "Head orientation (degrees): HEAD ORIENT DEG - " + regularAngle + "°\n");
+
+        // Head quaternion log
+        // Save quaternion of head just in case
+        File.AppendAllText(path, "Head quaternion: HEAD QUATERNION - " + playerRotation.rotation + "\n");
+
+        // Controller log - we only use the right controller
+        // Controller positions
+        xRContrPos = rightController.position.x;
+        yRContrPos = rightController.position.y;
+        zRContrPos = rightController.position.z;
+        File.AppendAllText(path, "Right Controller position (X, Y, Z): R CONTROLLER POS - (" + xRContrPos + ", " + yRContrPos + ", " + zRContrPos + ")\n");
+
+        // Controller rotation
+        Vector3 getRControllerRotation = rightController.rotation.eulerAngles;
+        xRContrRot = getRControllerRotation.x;
+        yRContrRot = getRControllerRotation.y;
+        zRContrRot = getRControllerRotation.z;
+        File.AppendAllText(path, "Right Controller rotation (X, Y, Z): R CONTROLLER ROT - (" + xRContrRot + ", " + yRContrRot + ", " + zRContrRot + ")\n");
+
+        // Controller quaternion log
+        File.AppendAllText(path, "Right Controller quaternion: R CONTROLLER QUATERNION - " + rightController.rotation + "\n");
 
         // Log what item the head is pointing toward
         // Note: only log interesting items, such the interactables 
