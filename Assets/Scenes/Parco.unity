@@ -1812,6 +1812,7 @@ MonoBehaviour:
   saveTime: 0.2
   playerPosition: {fileID: 2085828014}
   playerRotation: {fileID: 2085828012}
+  rightController: {fileID: 2119875431}
   layerMask:
     serializedVersion: 2
     m_Bits: 4096
