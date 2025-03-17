@@ -184,6 +184,24 @@
                     "processors": "",
                     "interactions": "Press(pressPoint=0.85)",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Teleport Activate (R)",
+                    "type": "Button",
+                    "id": "a957e7ca-6a05-4ff8-b189-2334f946b135",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Teleport Finish (R)",
+                    "type": "Button",
+                    "id": "484d6d37-ed75-40e0-860e-e04d0461bf80",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -470,6 +488,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Trackpad click (R)",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0d7736a6-ed5c-45ef-becb-7ffe8742d0ea",
+                    "path": "<ViveController>{RightHand}/trackpadClicked",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Activate (R)",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "f5ce3a1d-e970-4470-8280-c3fc468b866e",
+                    "path": "<ViveController>{RightHand}/trackpadClicked",
+                    "interactions": "Press(behavior=1)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Teleport Finish (R)",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
