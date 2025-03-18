@@ -31609,7 +31609,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!114 &1908653258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41214,7 +41214,7 @@ MonoBehaviour:
   throwPower: 1
   jointBreakForce: 3500
   showAdvancedSettings: 1
-  makeChildrenGrabbable: 0
+  makeChildrenGrabbable: 1
   grabPriorityWeight: 1
   ignoreReleaseTime: 0.5
   maxHeldVelocity: 10
