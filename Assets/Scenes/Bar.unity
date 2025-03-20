@@ -308,7 +308,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -434,6 +434,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plants for free vol 1_obj (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
@@ -1209,7 +1219,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &197071773
 Transform:
@@ -1258,7 +1268,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1314,7 +1324,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &205117748
 Transform:
@@ -1364,7 +1374,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1443,6 +1453,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253895153}
     m_Modifications:
+    - target: {fileID: -9207173881054144404, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9116997373074068706, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_RootOrder
@@ -1513,10 +1533,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7686327446385167839, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7426084944062340587, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6265684335417128564, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2694763768463306651, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_Name
       value: trop_flower_set_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246189378878555222, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415741897937051384, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654184821011175438, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316170871217804006, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713847071131976190, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679852176836240454, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1947,6 +2017,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: plants for free vol 1_obj
       objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1986,7 +2066,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &336072755
 Transform:
@@ -2036,7 +2116,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2092,7 +2172,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &372388201
 Transform:
@@ -2141,7 +2221,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2664,6 +2744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: df531b337d279fb4ba82c72d5f2f45ef, type: 2}
@@ -2682,6 +2767,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d87e8431f5e26b44a86c9aaefcc29408, type: 2}
+    - target: {fileID: 5513840191823156069, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2697,6 +2792,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: d87e8431f5e26b44a86c9aaefcc29408, type: 2}
+    - target: {fileID: 8376888327017635834, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2462c83434b69914ba01966f2ba99902, type: 3}
@@ -3030,7 +3130,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &507642392
 Transform:
@@ -3080,7 +3180,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -3127,6 +3227,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 265197641}
     m_Modifications:
+    - target: {fileID: -9207173881054144404, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9116997373074068706, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_RootOrder
@@ -3197,10 +3307,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7686327446385167839, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7426084944062340587, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6265684335417128564, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2694763768463306651, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_Name
       value: trop_flower_set_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246189378878555222, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415741897937051384, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654184821011175438, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316170871217804006, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713847071131976190, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679852176836240454, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3720,6 +3880,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253895153}
     m_Modifications:
+    - target: {fileID: -9172679829214807229, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_RootOrder
@@ -3792,6 +3957,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7158398021427030403, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7158398021427030403, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2184433932182226120, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
@@ -3814,6 +3984,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2184433932182226120, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
+    - target: {fileID: -6892037543895328721, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3908870737518807167, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3908870737518807167, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3825,6 +4005,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: df531b337d279fb4ba82c72d5f2f45ef, type: 2}
+    - target: {fileID: -3842504909289081421, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3842504909289081421, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3851,6 +4036,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: -2438308410198649584, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2438308410198649584, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d272bd087e3e1594ebe381d5b51d7169, type: 2}
@@ -3860,6 +4050,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -753960305446693620, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
+    - target: {fileID: -1860542153672022172, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1860542153672022172, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3876,6 +4071,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GC-HQ-Garden-Box-Outdoor-Vol-44-2019-Corona-fbx
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154258827932258405, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954987462371174738, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511968191460885424, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520470242010501891, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811681274416152936, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811681274416152936, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
@@ -3987,6 +4207,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: plants for free vol 1_obj (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4091,6 +4321,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: plants for free vol 1_obj (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4124,7 +4364,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &646744084
 Transform:
@@ -4175,7 +4415,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4645,7 +4885,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &755713318
 Transform:
@@ -4694,7 +4934,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -4881,6 +5121,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: df531b337d279fb4ba82c72d5f2f45ef, type: 2}
@@ -4899,6 +5144,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d87e8431f5e26b44a86c9aaefcc29408, type: 2}
+    - target: {fileID: 5513840191823156069, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4914,6 +5169,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: d87e8431f5e26b44a86c9aaefcc29408, type: 2}
+    - target: {fileID: 8376888327017635834, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2462c83434b69914ba01966f2ba99902, type: 3}
@@ -4971,7 +5231,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -5314,10 +5574,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6c4b998fca380484a853f876e43d88e8,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6c4b998fca380484a853f876e43d88e8,
         type: 3}
       propertyPath: m_Name
       value: rotang_puf
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6c4b998fca380484a853f876e43d88e8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5410,6 +5680,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 6c4b998fca380484a853f876e43d88e8,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6c4b998fca380484a853f876e43d88e8,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9838711136b70eb4dae5a8a9a4bbf630, type: 2}
@@ -5417,6 +5692,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: rotang_puf (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6c4b998fca380484a853f876e43d88e8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5660,7 +5940,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &984224984
 Transform:
@@ -5710,7 +5990,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6013,7 +6293,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1114053699
 Transform:
@@ -6063,7 +6343,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6252,7 +6532,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6415,6 +6695,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plants for free vol 1_obj (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
@@ -6785,7 +7075,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1243173706
 Transform:
@@ -6835,7 +7125,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -6936,6 +7226,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1253895153}
     m_Modifications:
+    - target: {fileID: -9207173881054144404, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -9116997373074068706, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_RootOrder
@@ -7006,16 +7306,66 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7686327446385167839, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7426084944062340587, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6265684335417128564, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2694763768463306651, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_Name
       value: trop_flower_set_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1246189378878555222, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2415741897937051384, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654184821011175438, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4316170871217804006, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713847071131976190, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6713847071131976190, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4052006dbc2a7224880edb7d741ae4e8, type: 2}
+    - target: {fileID: 8679852176836240454, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7111,10 +7461,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 5.882
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9f414072d6efeae439329d7ea827b2bc,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9f414072d6efeae439329d7ea827b2bc,
         type: 3}
       propertyPath: m_Name
-      value: -- Serving Tray --
+      value: -- Serving Tray 1 --
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9f414072d6efeae439329d7ea827b2bc,
         type: 3}
@@ -7505,6 +7860,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: plants for free vol 1_obj (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
@@ -8148,7 +8513,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1534149462
 Transform:
@@ -8198,7 +8563,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -8327,6 +8692,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: df531b337d279fb4ba82c72d5f2f45ef, type: 2}
@@ -8345,6 +8715,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d87e8431f5e26b44a86c9aaefcc29408, type: 2}
+    - target: {fileID: 5513840191823156069, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -8360,6 +8740,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 2b462c5be6a765c4e8b00544c9f07a8f, type: 2}
+    - target: {fileID: 8376888327017635834, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2462c83434b69914ba01966f2ba99902, type: 3}
@@ -13838,7 +14223,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &1741614743
 Transform:
@@ -13888,7 +14273,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -14158,6 +14543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4958341861475329890, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: df531b337d279fb4ba82c72d5f2f45ef, type: 2}
@@ -14176,6 +14566,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d87e8431f5e26b44a86c9aaefcc29408, type: 2}
+    - target: {fileID: 5513840191823156069, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7069352439918489068, guid: 2462c83434b69914ba01966f2ba99902,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14191,6 +14591,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 2b462c5be6a765c4e8b00544c9f07a8f, type: 2}
+    - target: {fileID: 8376888327017635834, guid: 2462c83434b69914ba01966f2ba99902,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 65702495048144492, guid: 2462c83434b69914ba01966f2ba99902, type: 3}
@@ -14334,6 +14739,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: plants for free vol 1_obj (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14436,9 +14851,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8190065423046790245, guid: 5f31327692b5e624f8c9f95b1940b386,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8190065423046790245, guid: 5f31327692b5e624f8c9f95b1940b386,
+        type: 3}
       propertyPath: m_Materials.Array.data[5]
       value: 
       objectReference: {fileID: 2100000, guid: 99d2743f0c05a984fbc960c9ddbe5993, type: 2}
+    - target: {fileID: 794921823759426713, guid: 5f31327692b5e624f8c9f95b1940b386,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5f31327692b5e624f8c9f95b1940b386,
         type: 3}
       propertyPath: m_Name
@@ -14828,6 +15253,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: plants for free vol 1_obj (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1805530767574403043, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3136439984876993822, guid: ac7bba1b4f1f99645a8374d755d3023d,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14899,7 +15334,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2005239094
 Transform:
@@ -14950,7 +15385,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15042,6 +15477,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1415461379}
     m_Modifications:
+    - target: {fileID: -9172679829214807229, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_RootOrder
@@ -15119,6 +15559,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7158398021427030403, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7158398021427030403, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2184433932182226120, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
@@ -15141,6 +15586,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2184433932182226120, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
+    - target: {fileID: -6892037543895328721, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3908870737518807167, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3908870737518807167, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15152,6 +15607,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: df531b337d279fb4ba82c72d5f2f45ef, type: 2}
+    - target: {fileID: -3842504909289081421, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3842504909289081421, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15178,6 +15638,11 @@ PrefabInstance:
         type: 3}
     - target: {fileID: -2438308410198649584, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2438308410198649584, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d272bd087e3e1594ebe381d5b51d7169, type: 2}
@@ -15187,6 +15652,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -753960305446693620, guid: 85938a3a812dc2d4cbd6cba3d1d94815,
         type: 3}
+    - target: {fileID: -1860542153672022172, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -1860542153672022172, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -15203,6 +15673,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GC-HQ-Garden-Box-Outdoor-Vol-44-2019-Corona-fbx (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5154258827932258405, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5954987462371174738, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8511968191460885424, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8520470242010501891, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8811681274416152936, guid: 37586cbba50ee044ab0baa34e8b11e2f,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8811681274416152936, guid: 37586cbba50ee044ab0baa34e8b11e2f,
         type: 3}
@@ -15352,7 +15847,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2090669185
 Transform:
@@ -15401,7 +15896,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15457,7 +15952,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &2108001201
 Transform:
@@ -15508,7 +16003,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -15630,6 +16125,21 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -8461554051821717842, guid: 920461cbaec7cc044ac5985ff4f4962d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8430983183428657120, guid: 920461cbaec7cc044ac5985ff4f4962d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7829297730858313923, guid: 920461cbaec7cc044ac5985ff4f4962d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -3109305094973496145, guid: 920461cbaec7cc044ac5985ff4f4962d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15644,6 +16154,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.694
+      objectReference: {fileID: 0}
+    - target: {fileID: -300048129630297665, guid: 920461cbaec7cc044ac5985ff4f4962d,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 920461cbaec7cc044ac5985ff4f4962d,
         type: 3}
@@ -15678,6 +16193,16 @@ PrefabInstance:
     - target: {fileID: 2087650493214203532, guid: 920461cbaec7cc044ac5985ff4f4962d,
         type: 3}
       propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2452885735215884268, guid: 920461cbaec7cc044ac5985ff4f4962d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2731279247435098337, guid: 920461cbaec7cc044ac5985ff4f4962d,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -16075,7 +16600,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
