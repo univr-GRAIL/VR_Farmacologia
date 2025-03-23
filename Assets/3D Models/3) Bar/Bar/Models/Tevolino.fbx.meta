@@ -3,7 +3,12 @@ guid: ea287f5347cf0d94abf5525677576a71
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tavolo
+    second: {fileID: 2100000, guid: fe480a75f7c4b224b9e250a12462d035, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
