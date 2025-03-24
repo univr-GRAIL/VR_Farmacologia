@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Bar.unity
     guid: 741a1091951598c45969a2e095401d2a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Parco LQ.unity
     guid: aa9d659254de1a444913c5bf9150e79a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bar LQ.unity
     guid: 378e665d4ecd4134bb7227eb2e80f213
   m_configObjects:

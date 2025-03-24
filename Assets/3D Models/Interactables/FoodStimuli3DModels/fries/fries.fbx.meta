@@ -3,7 +3,22 @@ guid: 72fad56430281464cb881fc49af0ee00
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: cb054bcde5da12d4c9d9972a49d9783d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ketchup.001
+    second: {fileID: 2100000, guid: 24ba8fe6e2365f84cb1e085110019c84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: maionese
+    second: {fileID: 2100000, guid: 620279796e1e98e45ba4e758e9d33144, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
