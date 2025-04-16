@@ -2,9 +2,9 @@
 
 A Virtual Reality application to measure correlations between food craving, type of environment and their rendering style.
 
-<img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="300">
+<img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="300"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="300">
 
-<img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="300">
+Project of the University of Verona between the Departement of Computer Science, Department of Engineering for Innovation Medicine (IntelliGO Labs, GRAIL division) and Department of Diagnostic and Public Health (NeuroPsychopharmacology - NeuroPsi Laboratory)
 
 Here is a summary of available environments and their functionalities
 
@@ -16,21 +16,6 @@ Here is a summary of available environments and their functionalities
 | Library 					  | Man-made    | Real 				        | Book, pen | ❌ Fix teleport & eye tracking |
 | Church 					  | Man-made    | Real 				        | Breviary | ❌ Fix teleport & eye tracking |
 | Clothing store 			  | Man-made    | Real 				        | Shopping basket with clothes | ❌ Fix teleport & eye tracking |
-
-User actions are logged in log files every 0.2 seconds, that includes:
-* Name of the scene
-* User absolute starting position
-* If the user teleported, where and their previous position
-* User position relative to the starting one
-* User absolute position
-* Head orientation in degrees
-* Head quaternion
-* Right controller position
-* Right controller rotation
-* Right controller quaternion
-* If the head is pointing toward an interactable
-* If the user is gazing an interactable
-* If the user is grabbing an interactable
 
 ## Pre-requisites
 * Windows 10/11
@@ -86,6 +71,23 @@ Squeeze the Grip button to cancel an initiated teleport action.
 To grab an interactable, approach it and hold down the Trigger button. 
 Release the Trigger to drop the item.
 A white circle appears on top of the controller when the Trigger button is pushed.
+
+## Logs
+
+User actions are logged in log files every 0.2 seconds, that includes:
+* Name of the scene
+* User absolute starting position
+* If the user teleported, where and their previous position
+* User position relative to the starting one
+* User absolute position
+* Head orientation in degrees
+* Head quaternion
+* Right controller position
+* Right controller rotation
+* Right controller quaternion
+* If the head is pointing toward an interactable
+* If the user is gazing an interactable
+* If the user is grabbing an interactable
 
 ## Rendering styles & quality
 
