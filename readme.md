@@ -17,7 +17,7 @@ This repository contains the code and assets used in the study presented in the 
 **[Attentive Saliency and Photorealism in Immersive Virtual Environments](https://doi.org/10.1145/3750069.3750321)**
 
 
-## 🧠 Overview
+##  Overview
 
 The study explores how **rendering styles**—specifically **photorealism vs. non-photorealism**—affect **visual saliency** and the **sense of presence** in immersive virtual reality (VR) experiences. The research was conducted in the context of **junk food craving**, using head-mounted displays (HMDs) and tracking systems.
 
@@ -25,7 +25,7 @@ We also evaluate the potential of using **head tracking** as a proxy for **eye t
 
 Project of the University of Verona between the Departement of Computer Science, Department of Engineering for Innovation Medicine (IntelliGO Labs, GRAIL division) and Department of Diagnostic and Public Health (NeuroPsychopharmacology - NeuroPsi Laboratory)
 
-<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="330"></center>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="330"></div>
 
 Here is a summary of available environments and their functionalities:
 
@@ -83,14 +83,14 @@ For the study, we defined two special, interactable food items: a **burger** and
 These were the only objects tracked for user attention (via gaze and head direction) and could be grabbed as whole items. 
 Both were modeled in 3D based on validated images from the FoodCast Research Image Database (FRIDa).
 
-<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/foodcues.jpg" alt="FoodCues"></center>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/foodcues.jpg" alt="FoodCues"></div>
 
-(a)(b)  Calidated and standardized food-related stimuli from FRIDa
-( c)(d)  Renderings of the corresponding 3D models inserted in our environments
+> (a)(b)  Calidated and standardized food-related stimuli from FRIDa
+> (c)(d)  Renderings of the corresponding 3D models inserted in our environments
 
 ## Navigation and Locomotion
 
-<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/vive_controller_lineart_color.jpg" alt="ControllerLineart" width="330"></center>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/vive_controller_lineart_color.jpg" alt="ControllerLineart" width="330"></div>
 
 Use [Vive Pro Controllers](https://www.vive.com/us/support/vive/category_howto/about-the-controllers.html)
 
@@ -111,6 +111,57 @@ To grab an interactable, approach it and hold down the Trigger button (red in fi
 Release the Trigger to drop the item.
 A white circle appears on top of the controller when the Trigger button is pushed.
 
+## Rendering styles & quality
+
+Each VR scene is available in two versions:
+
+-   **High Realism (HR)**: photorealistic rendering    
+-   **Low Realism (LR)**: stylized, cartoon-like rendering
+    
+Both versions are built with **Unity's Universal Render Pipeline (URP)**. Rather than tweaking individual parameters, we defined two consistent visual styles to compare their effect on user attention.
+
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HRhighlights.jpg" alt="HR highlights" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LRhighlights.jpg" alt="LR highlights" width="330"></div>
+
+> 1st image: Low Resolution Cafè scene 
+> 2nd image: High Resolution Cafè scene
+
+### High Realism (HR)
+
+The HR version uses:
+
+-   2K textures    
+-   High-resolution soft shadows for natural lighting    
+-   Post-processing with [ReShade](https://github.com/crosire/reshade):    
+    -   Simulated HDR (tone mapping for natural light range)        
+    -   Bloom effects for glowing highlights        
+
+These choices aim to create a believable and immersive environment.
+
+### Low Realism (LR)
+
+The LR version simplifies the rendering:
+-   Textures at 1/8 resolution    
+-   Only hard shadows    
+-   Stylized post-processing with [ReShade](https://github.com/crosire/reshade):    
+    -   Black outlines        
+    -   Surface blur        
+    -   +20% saturation        
+    -   Color quantization (16 brightness levels)        
+
+This results in a flatter, more cartoonish look.
+
+Both versions include baked lightmaps, ambient occlusion, and light probes near interactive elements to ensure consistent lighting.
+
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/barHQScreen1.jpg" alt="Cafè high realism" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/barLQScreen1.jpg" alt="Cafè low realism" width="330"></div>
+
+> 1st image: Cafè High Realism 
+> 2nd image: Cafè Low Realism
+
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQScreen1.jpg" alt="Park high realism" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkLQScreen1.jpg" alt="Park low realism" width="330"></div>
+
+> 1st image: Park High Realism 
+> 2nd image: Park Low Realism
+
 ## Logs
 
 User actions are logged in log files every 0.2 seconds, that includes:
@@ -127,7 +178,3 @@ User actions are logged in log files every 0.2 seconds, that includes:
 * If the head is pointing toward an interactable
 * If the user is gazing an interactable
 * If the user is grabbing an interactable
-
-## Rendering styles & quality
-
-[TODO explain]
