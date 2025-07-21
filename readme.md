@@ -25,7 +25,7 @@ We also evaluate the potential of using **head tracking** as a proxy for **eye t
 
 Project of the University of Verona between the Departement of Computer Science, Department of Engineering for Innovation Medicine (IntelliGO Labs, GRAIL division) and Department of Diagnostic and Public Health (NeuroPsychopharmacology - NeuroPsi Laboratory)
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="330"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="500"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="500"></div>
 
 Here is a summary of available environments and their functionalities:
 
@@ -86,11 +86,12 @@ Both were modeled in 3D based on validated images from the FoodCast Research Ima
 <div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/foodcues.jpg" alt="FoodCues"></div>
 
 > (a)(b)  Calidated and standardized food-related stimuli from FRIDa
+> 
 > (c)(d)  Renderings of the corresponding 3D models inserted in our environments
 
 ## Navigation and Locomotion
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/vive_controller_lineart_color.jpg" alt="ControllerLineart" width="330"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/vive_controller_lineart_color.jpg" alt="ControllerLineart" width="200"></div>
 
 Use [Vive Pro Controllers](https://www.vive.com/us/support/vive/category_howto/about-the-controllers.html)
 
@@ -120,10 +121,11 @@ Each VR scene is available in two versions:
     
 Both versions are built with **Unity's Universal Render Pipeline (URP)**. Rather than tweaking individual parameters, we defined two consistent visual styles to compare their effect on user attention.
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HRhighlights.jpg" alt="HR highlights" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LRhighlights.jpg" alt="LR highlights" width="330"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HRhighlights.jpg" alt="HR highlights" width="500"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LRhighlights.jpg" alt="LR highlights" width="500"></div>
 
-> 1st image: Low Resolution Cafè scene 
-> 2nd image: High Resolution Cafè scene
+> 1st image: High Resolution Cafè scene 
+> 
+> 2nd image: Low Resolution Cafè scene
 
 ### High Realism (HR)
 
@@ -152,14 +154,16 @@ This results in a flatter, more cartoonish look.
 
 Both versions include baked lightmaps, ambient occlusion, and light probes near interactive elements to ensure consistent lighting.
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/barHQScreen1.jpg" alt="Cafè high realism" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/barLQScreen1.jpg" alt="Cafè low realism" width="330"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/barHQScreen1.jpg" alt="Cafè high realism" width="500"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/barLQScreen1.jpg" alt="Cafè low realism" width="500"></div>
 
 > 1st image: Cafè High Realism 
+> 
 > 2nd image: Cafè Low Realism
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQScreen1.jpg" alt="Park high realism" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkLQScreen1.jpg" alt="Park low realism" width="330"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQScreen1.jpg" alt="Park high realism" width="500"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkLQScreen1.jpg" alt="Park low realism" width="500"></div>
 
 > 1st image: Park High Realism 
+> 
 > 2nd image: Park Low Realism
 
 ## Logs
