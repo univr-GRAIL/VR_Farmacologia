@@ -177,7 +177,7 @@ Both versions include baked lightmaps, ambient occlusion, and light probes near 
 ### High Realism 
 
 #### Lights
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR light cafe.jpg" alt="hr light cafe"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR light park.jpg" alt="hr light park"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR light cafe.png" alt="hr light cafe" width="400"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR light park.png" alt="hr light park" width="400"></div>
 
 > 1st image: HR Cafè
 > 
@@ -185,13 +185,12 @@ Both versions include baked lightmaps, ambient occlusion, and light probes near 
 
 #### URP Settings
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR urp 1.jpg" alt="hr urp 1"></div>
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR urp 2.jpg" alt="hr urp 2"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR urp 1.jpg" alt="hr urp 1" width="400"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR urp 2.jpg" alt="hr urp 2" width="400"></div>
 
 ### Low Realism 
 
 #### Lights
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR light cafe.jpg" alt="lr light cafe"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR light park.jpg" alt="lr light park"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR light cafe.jpg" alt="lr light cafe" width="400"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR light park.jpg" alt="lr light park" width="400"></div>
 
 > 1st image: LR Cafè
 > 
@@ -199,13 +198,12 @@ Both versions include baked lightmaps, ambient occlusion, and light probes near 
 
 #### URP Settings
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR urp 1.jpg" alt="lr urp 1"></div>
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR urp 2.jpg" alt="lr urp 2"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR urp 1.jpg" alt="lr urp 1" width="400"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR urp 2.jpg" alt="lr urp 2" width="400"></div>
 
 ### Light baking
 As a reference, here are baking settings used for both HR and LR scenes:
 
-<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/bake farma.jpg" alt="lights baking settings"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/bake farma.jpg" alt="lights baking settings" width="400"></div>
 
 ## Logs
 
