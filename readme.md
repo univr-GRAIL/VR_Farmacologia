@@ -67,6 +67,12 @@ Make sure to have all the pre-requisites listed above.
 * Open the project with Unity Engine
 * Open a scene in `Assets - Scenes`
 
+Each environment comes in two different Unity scene file:
+- Cafe HR and Cafe LR
+- Park HR and Park LR
+- 
+[...]
+
 ### To test inside Unity Engine
 
 * Connect headset to PC, open SteamVR and make sure headset is visible in SteamVR
@@ -75,7 +81,7 @@ Make sure to have all the pre-requisites listed above.
 
 ### Build for Windows
 
-[TODO, remember to explain URP quality]
+When building the project to create an `.exe, you must be careful and select the correct URP preset, to effectively change the quality of the scene.
 
 ## Interactables
 
@@ -85,7 +91,7 @@ Both were modeled in 3D based on validated images from the FoodCast Research Ima
 
 <div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/foodcues.jpg" alt="FoodCues"></div>
 
-> (a)(b)  Calidated and standardized food-related stimuli from FRIDa
+> (a)(b)  Calibrated and standardized food-related stimuli from FRIDa
 > 
 > (c)(d)  Renderings of the corresponding 3D models inserted in our environments
 
@@ -123,9 +129,9 @@ Both versions are built with **Unity's Universal Render Pipeline (URP)**. Rather
 
 <div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HRhighlights.jpg" alt="HR highlights" width="400"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LRhighlights.jpg" alt="LR highlights" width="400"></div>
 
-> 1st image: High Resolution Cafè scene 
+> 1st image: High Realism Cafè scene 
 > 
-> 2nd image: Low Resolution Cafè scene
+> 2nd image: Low Realism Cafè scene
 
 ### High Realism (HR)
 
@@ -165,6 +171,41 @@ Both versions include baked lightmaps, ambient occlusion, and light probes near 
 > 1st image: Park High Realism 
 > 
 > 2nd image: Park Low Realism
+
+## Quality settings
+
+### High Realism 
+
+#### Lights
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR light cafe.jpg" alt="hr light cafe"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR light park.jpg" alt="hr light park"></div>
+
+> 1st image: HR Cafè
+> 
+> 2nd image: HR Park
+
+#### URP Settings
+
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR urp 1.jpg" alt="hr urp 1"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/HR urp 2.jpg" alt="hr urp 2"></div>
+
+### Low Realism 
+
+#### Lights
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR light cafe.jpg" alt="lr light cafe"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR light park.jpg" alt="lr light park"></div>
+
+> 1st image: LR Cafè
+> 
+> 2nd image: LR Park
+
+#### URP Settings
+
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR urp 1.jpg" alt="lr urp 1"></div>
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/LR urp 2.jpg" alt="lr urp 2"></div>
+
+### Light baking
+As a reference, here are baking settings used for both HR and LR scenes:
+
+<div align="center"><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/bake farma.jpg" alt="lights baking settings"></div>
 
 ## Logs
 
