@@ -1,10 +1,31 @@
-# Food craving & Realism in VR scenes
 
-A Virtual Reality application to measure correlations between food craving, type of environment and their rendering style.
+<div align="center">
+<h1>Attentive Saliency and Photorealism in Immersive Virtual Environments</h1>
 
-<img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="350"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="350">
+[**Deborah Pintani**](https://debbyx3.github.io)<sup>1*;</sup> · [**Giulia Benvegnù**](https://www.ddsp.univr.it/?ent=persona&id=39360&lang=en)<sup>2;</sup> · [**Federico Maria Lorusso**](mailto:federicomaria.lorusso@studenti.unipd.it)<sup>3</sup> · [**Cristiano Chiamulera**](https://www.ddsp.univr.it/?ent=persona&id=564)<sup>2</sup> · [**Andrea Giachetti**](https://www.dimi.univr.it/?ent=persona&id=4028)<sup>4</sup> · [**Ariel Caputo**](https://www.dimi.univr.it/?ent=persona&id=67990)<sup>4</sup> 
+
+<sup>1</sup>Department of Computer Science, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;<sup>2</sup>Department of Diagnostic and Public Health, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;<sup>3</sup>University of Padua, Italy&emsp;&emsp;&emsp;&emsp; <sup>4</sup>Department of Engineering for Innovation Medicine, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;
+
+*corresponding author
+
+[CHItaly2025](https://doi.org/10.1145/3750069.3750321)
+</div>
+
+<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/teaser.jpg" alt="teaser"></center>
+
+This repository contains the code and assets used in the study presented in the paper:
+**[Attentive Saliency and Photorealism in Immersive Virtual Environments](https://doi.org/10.1145/3750069.3750321)**
+
+
+## 🧠 Overview
+
+The study explores how **rendering styles**—specifically **photorealism vs. non-photorealism**—affect **visual saliency** and the **sense of presence** in immersive virtual reality (VR) experiences. The research was conducted in the context of **junk food craving**, using head-mounted displays (HMDs) and tracking systems.
+
+We also evaluate the potential of using **head tracking** as a proxy for **eye tracking** to simplify saliency measurement in VR experiments.
 
 Project of the University of Verona between the Departement of Computer Science, Department of Engineering for Innovation Medicine (IntelliGO Labs, GRAIL division) and Department of Diagnostic and Public Health (NeuroPsychopharmacology - NeuroPsi Laboratory)
+
+<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="350"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="350"></center>
 
 Here is a summary of available environments and their functionalities
 
