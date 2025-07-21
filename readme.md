@@ -25,14 +25,19 @@ We also evaluate the potential of using **head tracking** as a proxy for **eye t
 
 Project of the University of Verona between the Departement of Computer Science, Department of Engineering for Innovation Medicine (IntelliGO Labs, GRAIL division) and Department of Diagnostic and Public Health (NeuroPsychopharmacology - NeuroPsi Laboratory)
 
-<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="350"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="350"></center>
+<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/parkHQ.png" alt="ParkHQ" width="330"> <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/coffeeShopHQ.png" alt="CoffeeShopHQ" width="330"></center>
 
-Here is a summary of available environments and their functionalities
+Here is a summary of available environments and their functionalities:
 
 | Environment 				  | Type 		| Rendering quality & styles 	| Interactables | Fully working |
 |-----------------------------|-------------|-------------------|---------------|---------------|
 | Park 						  | Natural 	| Real (HQ), cartoon (LQ) 	| Burger, fries | ✅ |
 | Coffee Shop (external area) | Man-made    | Real (HQ), cartoon (LQ) 	| Burger, fries | ✅ |
+
+Additionally, we included other environments that were not used in the study but are provided here for completeness:
+
+| Environment 				  | Type 		| Rendering quality & styles 	| Interactables | Fully working |
+|-----------------------------|-------------|-------------------|---------------|---------------
 | Porch / Home garden 		  | Natural     | Real 				        | Cigarettes, pack of cigarettes | ❌ Fix teleport & eye tracking |
 | Library 					  | Man-made    | Real 				        | Book, pen | ❌ Fix teleport & eye tracking |
 | Church 					  | Man-made    | Real 				        | Breviary | ❌ Fix teleport & eye tracking |
@@ -72,24 +77,37 @@ Make sure to have all the pre-requisites listed above.
 
 [TODO, remember to explain URP quality]
 
+## Interactables
+
+For the study, we defined two special, interactable food items: a **burger** and a **tray of fries**. 
+These were the only objects tracked for user attention (via gaze and head direction) and could be grabbed as whole items. 
+Both were modeled in 3D based on validated images from the FoodCast Research Image Database (FRIDa).
+
+<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/foodcues.jpg" alt="FoodCues"></center>
+
+(a)(b)  Calidated and standardized food-related stimuli from FRIDa
+( c)(d)  Renderings of the corresponding 3D models inserted in our environments
+
 ## Navigation and Locomotion
+
+<center><img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/vive_controller_lineart_color.jpg" alt="ControllerLineart" width="330"></center>
 
 Use [Vive Pro Controllers](https://www.vive.com/us/support/vive/category_howto/about-the-controllers.html)
 
 ### Teleporting
 
-Point the right contoller towards the direction you want to teleport to, and hold down the Trackpad. 
+Point the right contoller towards the direction you want to teleport to, and hold down the Trackpad (blue in figure). 
 A green circle and arc appear if the location allows teleporting. 
 Release the Trackpad button to teleport there. 
 If the location does not allow teleporting, the circle and arc will be red.
 
 #### Cancel teleport
 
-Squeeze the Grip button to cancel an initiated teleport action.
+Squeeze the Grip button (green in figure) to cancel an initiated teleport action.
 
 ### Grab interactables
 
-To grab an interactable, approach it and hold down the Trigger button. 
+To grab an interactable, approach it and hold down the Trigger button (red in figure). 
 Release the Trigger to drop the item.
 A white circle appears on top of the controller when the Trigger button is pushed.
 
