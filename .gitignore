@@ -78,4 +78,4 @@ crashlytics-build.properties
 /[Aa]ssets/3D Models/6) Clothes Shop/NegozioOld.fbx
 
 # LightingData.asset data -> used only when baking lights and not 'in game'
-/[Aa]ssets/Scenes/Parco/LightingData.asset 
+/[Aa]ssets/Scenes/Park/LightingData.asset 
