@@ -95,7 +95,7 @@ When building the project into an `.exe`, make sure to select the correct **URP 
         
     Example screenshots:  
     <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/quality low.png" alt="quality low">  
-    <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/quality high.png" alt="quality ultra">
+    <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/quality ultra.png" alt="quality ultra">
 
 #### Build the Project
 
