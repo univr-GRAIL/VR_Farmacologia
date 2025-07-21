@@ -68,10 +68,12 @@ Make sure to have all the pre-requisites listed above.
 * Open a scene in `Assets - Scenes`
 
 Each environment comes in two different Unity scene file:
-- Cafe HR and Cafe LR
-- Park HR and Park LR
-- 
-[...]
+* Cafe HR and Cafe LR
+* Park HR and Park LR
+
+### ‼️​ Please note ‼️
+Due to repository size limitations, the pre-baked lighting assets couldn't be included.  
+Please re-bake the lights locally to experience the scenes as intended.
 
 ### To test inside Unity Engine
 
@@ -81,7 +83,43 @@ Each environment comes in two different Unity scene file:
 
 ### Build for Windows
 
-When building the project to create an `.exe, you must be careful and select the correct URP preset, to effectively change the quality of the scene.
+When building the project into an `.exe`, make sure to select the correct **URP (Universal Render Pipeline)** quality preset. This will ensure the scene is rendered with the intended visual fidelity.
+
+#### Change URP Quality Preset (e.g., from High to Low)
+
+1.  Go to:  
+    `Edit → Project Settings → Quality`    
+2.  Under the **Quality Levels**, check only the boxes corresponding to your target preset:    
+    -   For **Low Quality (LR)**, enable only the `Low` option and **disable** all others (e.g., `Ultra`)        
+    -   For **High Quality (HR)**, enable only the `Ultra` option
+        
+    Example screenshots:  
+    <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/quality low.png" alt="quality low">  
+    <img src="https://github.com/univr-GRAIL/VR_Farmacologia/blob/main/Assets/Screenshots/quality high.png" alt="quality high">
+
+#### Build the Project
+
+*  Open:  
+    `File → Build Settings...`    
+*  Click **Add Open Scenes**  
+    → Make sure your current scene is selected.    
+* Set the platform:    
+    -   Select Windows, Mac, Linux       
+    -   Target Platform: Windows        
+    -   Architecture: Intel 64-bit        
+    -   Uncheck any other build options        
+    -  Compression Method: Default
+*  Click Build and choose your destination folder.    
+
+
+#### Run the Build with VR
+
+*  Connect your VR headset to the PC.
+*  Open **SteamVR**, and ensure your headset is visible and tracked.
+*  In SteamVR:
+    -   Go to `Settings → Developer`
+    -   Make sure **SteamVR is set as the current OpenXR Runtime**
+* Finally, **run the `.exe` you just built** and enjoy the scene!
 
 ## Interactables
 
