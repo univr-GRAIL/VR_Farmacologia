@@ -2,9 +2,9 @@
 <div align="center">
 <h1>Attentive Saliency and Photorealism in Immersive Virtual Environments</h1>
 
-[**Deborah Pintani**](https://debbyx3.github.io)<sup>1*;</sup> · [**Giulia Benvegnù**](https://www.ddsp.univr.it/?ent=persona&id=39360&lang=en)<sup>2;</sup> · [**Federico Maria Lorusso**](mailto:federicomaria.lorusso@studenti.unipd.it)<sup>3</sup> · [**Cristiano Chiamulera**](https://www.ddsp.univr.it/?ent=persona&id=564)<sup>2</sup> · [**Andrea Giachetti**](https://www.dimi.univr.it/?ent=persona&id=4028)<sup>4</sup> · [**Ariel Caputo**](https://www.dimi.univr.it/?ent=persona&id=67990)<sup>4</sup> 
+[**Deborah Pintani**](https://debbyx3.github.io)<sup>1*;</sup> · [**Giulia Benvegnù**](https://www.ddsp.univr.it/?ent=persona&id=39360&lang=en)<sup>2;</sup> · [**Federico Maria Lorusso**](mailto:federicomaria.lorusso@studenti.unipd.it)<sup>2</sup> · [**Cristiano Chiamulera**](https://www.ddsp.univr.it/?ent=persona&id=564)<sup>2</sup> · [**Andrea Giachetti**](https://www.dimi.univr.it/?ent=persona&id=4028)<sup>3</sup> · [**Ariel Caputo**](https://www.dimi.univr.it/?ent=persona&id=67990)<sup>3</sup> 
 
-<sup>1</sup>Department of Computer Science, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;<sup>2</sup>Department of Diagnostic and Public Health, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;<sup>3</sup>University of Padua, Italy&emsp;&emsp;&emsp;&emsp; <sup>4</sup>Department of Engineering for Innovation Medicine, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;
+<sup>1</sup>Department of Computer Science, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;<sup>2</sup>Department of Diagnostic and Public Health, University of Verona, Italy&emsp;&emsp;&emsp;&emsp; <sup>3</sup>Department of Engineering for Innovation Medicine, University of Verona, Italy&emsp;&emsp;&emsp;&emsp;
 
 *corresponding author
 
